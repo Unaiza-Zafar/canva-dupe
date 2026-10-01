@@ -1,0 +1,48 @@
+---
+description: Core project development standards and architecture conventions
+alwaysApply: true
+---
+
+# Project Development Standards
+
+## UI & Components
+
+* Use **shadcn/ui** components whenever an appropriate component exists.
+* Prefer existing shared/common components before creating new ones.
+* Build reusable components when the same UI or logic is used in multiple places.
+* Do not duplicate components or UI patterns unnecessarily.
+* Keep presentation/UI components separate from business logic where practical.
+
+## API & Data Logic
+
+* Do not duplicate API calls, API services, mutations, or data-fetching logic.
+* Before creating new API logic, check whether an existing service, hook, query, mutation, or utility can be reused.
+* Keep API/data-fetching logic separate from presentation components.
+* Reuse existing types, schemas, services, and hooks whenever possible.
+
+## Project Structure
+
+* Follow the existing project folder structure and conventions.
+* Before creating a new folder, component, hook, service, utility, or type, check how similar functionality is already organized.
+* Follow existing naming conventions rather than introducing new patterns.
+* Prefer consistency with the existing codebase over introducing a new architecture.
+
+## Code Changes
+
+* Make the smallest change necessary to solve the requested problem.
+* Do not refactor unrelated code unless it is required for the task.
+* Do not introduce a new dependency when an existing dependency or native solution is sufficient.
+* Preserve existing behavior unless the task explicitly requires changing it.
+* Before implementing something new, search the codebase for existing solutions.
+
+## Quality
+
+* Keep implementations simple, maintainable, and production-ready.
+* Avoid unnecessary abstractions.
+* Avoid premature optimization.
+* Consider responsive behavior and accessibility for UI changes.
+* Follow existing error handling and loading-state patterns.
+
+## Important
+
+When unsure whether to create something new, first look for an existing component, hook, service, utility, type, schema, or pattern that can be reused.
